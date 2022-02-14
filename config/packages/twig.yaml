@@ -1,0 +1,8 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        page: '%env(json:file:resolve:TWIG_PAGE)%'
+
+when@test:
+    twig:
+        strict_variables: true
